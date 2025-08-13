@@ -64,6 +64,7 @@ function timer(){
         setTimeout(update, (RATE * 1000));
         if(TIME == 0){
             switchTeam();
+            startToStart();
             TIME = 90000;
             PAUSE = true;
             showT();
