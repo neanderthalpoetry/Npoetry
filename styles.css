@@ -172,7 +172,9 @@ h2 {
 h3 {
     color: rgba(128, 128, 128, 0.536);
     z-index: 3;
-
+    text-align: center;
+    position: absolute;
+    margin-left: 10px;
 }
 
 /* @keyframes slide-in {
