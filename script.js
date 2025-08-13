@@ -54,19 +54,19 @@ skip.addEventListener("click", function(){
 reset.addEventListener("click", function(){
     if(PAUSE){
         TIME = 90000;
-        time.innerHTML = String(TIME).substr(0, 2);
+        showT();
     }
 });
 
 function timer(){
     if(!PAUSE){
-        time.innerHTML = String(TIME).substr(0, 2);
+        showT();
         setTimeout(update, (RATE * 1000));
         if(TIME == 0){
             switchTeam();
             TIME = 90000;
             PAUSE = true;
-            time.innerHTML = String(TIME).substr(0, 2);
+            showT();
         }
         else{
             TIME -= 1000;
@@ -78,7 +78,7 @@ function timer(){
 Next.addEventListener("click", function(){
     switchTeam();
     TIME = 90000;
-    time.innerHTML = String(TIME).substr(0, 2);
+    showT();
     PAUSE = true;
     startToStart();
 
@@ -271,4 +271,13 @@ function startToStart(){
     start.style.backgroundColor = "lime";
     start.innerHTML = "start";
     start.style.color = "white";
+}
+
+function showT(){
+    if(TIME < 10000){
+        time.innerHTML = String(TIME).substr(0, 1);
+    }
+    else{
+        time.innerHTML = String(TIME).substr(0, 2);
+    }
 }
