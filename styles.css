@@ -18,6 +18,14 @@ main {
     width: 34vw;
 }
 
+#middle {
+    position: fixed;
+    top: 50%; /* center vertically */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%);
+    overflow-y: auto; 
+}
+
 #MAD {
     height: 100vh;
 }
@@ -128,6 +136,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-gap: 1rem;
+    z-index: 1;
 }
 
 #Mred {
@@ -160,3 +169,25 @@ h2 {
     padding: 10px;
     width: 150;
 }
+h3 {
+    color: rgba(128, 128, 128, 0.536);
+    z-index: 3;
+
+}
+
+/* @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #middle {
+    animation: slide-in linear;
+    animation-timeline: view(); /* Animates when element enters/exits the viewport */
+    /* Or: animation-timeline: scroll(root block); for animation based on root scroll */
+  } */

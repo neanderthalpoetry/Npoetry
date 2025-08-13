@@ -256,13 +256,13 @@ function count(){
     MRcount = Mred.childElementCount;
     MYcount = Myellow.childElementCount;
     MGcount = Mgreen.childElementCount;
-    Mcount = (-1 * MRcount) + MYcount + (3 * MGcount);
+    Mcount = (-1 * (MRcount - 1)) + (MYcount - 1) + (3 * (MGcount - 1));
     MADc.innerHTML = (Mcount + " team MAD");
     console.log("mad: " + Mcount);
     GRcount = Gred.childElementCount;
     GYcount = Gyellow.childElementCount;
     GGcount = Ggreen.childElementCount;
-    Gcount = (-1 * GRcount) + GYcount + (3 * GGcount);
+    Gcount = (-1 * (GRcount - 1)) + (GYcount - 1) + (3 * (GGcount - 1));
     GLADc.innerHTML = ("team GLAD " + Gcount);
     console.log("GLAD: " + Gcount); 
 }

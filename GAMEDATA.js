@@ -1,5 +1,5 @@
 
-"game_data", [
+GAMEDATA = [
     [
         "1", "Stretch",
         "3", "Stretchy Pants"
