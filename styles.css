@@ -176,20 +176,3 @@ h3 {
     position: absolute;
     margin-left: 10px;
 }
-
-/* @keyframes slide-in {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  #middle {
-    animation: slide-in linear;
-    animation-timeline: view(); /* Animates when element enters/exits the viewport */
-    /* Or: animation-timeline: scroll(root block); for animation based on root scroll */
-  } */
