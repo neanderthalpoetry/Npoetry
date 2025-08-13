@@ -125,8 +125,8 @@ h2 {
     height: 31%;
     min-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -142,9 +142,21 @@ h2 {
     background-color: rgb(120, 255, 120);
 }
 
+#Gred {
+    background-color: rgb(255, 98, 98);
+}
+
+#Gyellow {
+    background-color: rgb(255, 255, 109);
+}
+
+#Ggreen {
+    background-color: rgb(120, 255, 120);
+}
+
 .points {
     border-radius: 10px;
-    /* width: fit-content; */
+    width: fit-content;
     padding: 10px;
     width: 150;
 }
