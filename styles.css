@@ -89,9 +89,15 @@ section {
 }
 
 #card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+
 }
 
 #card figure {
@@ -101,28 +107,53 @@ section {
 }
 
 #card figure figcaption {
-    font-size: medium;
+    font-size: large;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.cards {
-    background-color: grey;
+#card figure {
     width: 98%;
+    padding-top: 10px;
 }
 
-.cards button {
-    width: 80px;
-    height: auto;
+#onePoint {
+    background-color: lightgray;
 }
 
-#card button {
-    margin: 5px 0;
-    grid-column: span 2;
+#threePoint {
+    background-color: grey;
+    border-radius: 0 0 10px 10px;
+}
+
+#oneT {
+    background-color: grey;
+}
+
+#threeT {
+    background-color: lightgray;
+}
+
+#card figure button {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+#skip {
+    margin: 5px 25%;
+    width: 50%;
     height: 5vw;
     border-radius: 5vw;
     color: white;
     font-size: x-large;
     color: black;
     border-radius: 50%;
+    margin-bottom: 10px;
+
 }
 
 h2 {
@@ -169,10 +200,10 @@ h2 {
     padding: 10px;
     width: 150;
 }
+
 h3 {
     color: rgba(128, 128, 128, 0.536);
     z-index: 3;
-    text-align: center;
     position: absolute;
     margin-left: 10px;
 }
