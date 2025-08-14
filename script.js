@@ -3,6 +3,7 @@ PAUSE = false;
 RATE = 1;
 SELECTC = "lightblue";
 CARDID = 0;
+FIRST = true;
 if(randomInt(1,2) == 1){
     TEAM = "MAD";
     MAD.style.backgroundColor = SELECTC;
@@ -31,10 +32,10 @@ start.addEventListener("click", function(){
         PAUSE = true;
     }
     timer();
-    if(TIME != 90000){
+    if(FIRST){
         find();
     }
-    
+    FIRST = false;
 });
 
 skip.addEventListener("click", function(){
@@ -82,7 +83,7 @@ Next.addEventListener("click", function(){
     showT();
     PAUSE = true;
     startToStart();
-
+    FIRST = true;
 });
 
 function getCard(){

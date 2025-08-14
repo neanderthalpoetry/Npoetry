@@ -197,6 +197,7 @@ h2 {
 .points {
     border-radius: 10px;
     width: fit-content;
+    height: fit-content;
     padding: 10px;
     width: 150;
 }
